@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Email Directly</title>
+</head>
+<body>
+  <h1>Send Email</h1>
+  <form action="/api/send" method="POST">
+    <label>From: <input type="email" name="from" required></label><br><br>
+    <label>To: <input type="email" name="to" required></label><br><br>
+    <label>Message:<br>
+      <textarea name="message" rows="5" cols="40" required></textarea>
+    </label><br><br>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
